@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="../styles/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-app="myApp" ng-controller="friendsController">
+
+    <h3 class="bg-success text-center">Your Friends</h3>
+    <ul>
+        <li ng-repeat="f in friends | orderBy:'name' | limitTo:-3">
+            {{f.name | uppercase}} - {{f.phone}} - {{f.country | lowercase}}
+
+        </li>
+    </ul>
+    <br />
+
+    Filter on Name:<input type="text" ng-model="filterText" />
+    Strict: <input type="checkbox" ng-model="isStrict" /><br />
+    <br />
+    <table border="1">
+        <caption>Friends List</caption>
+        <tr>
+            <th>Friend's Name</th>
+            <th>Phone</th>
+            <th>Country</th>
+        </tr>
+        <tr ng-repeat="f in friends | filter:{name:filterText}:isStrict">
+            <td>{{f.name}}</td>
+            <td>{{f.phone}}</td>
+            <td>{{f.country | lowercase}}</td>
+        </tr>
+    </table>
+    <br />
+    <div>JSON Data: {{friends | json}}</div>
+
+    <script src="../scripts/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

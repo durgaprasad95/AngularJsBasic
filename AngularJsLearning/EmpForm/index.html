@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="../styles/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-app="myApp" ng-cloak class="well"
+      ng-controller="EmpController">
+    <h1 class="bg-info text-center" ng-bind="appTitle">{{appTitle}}</h1>
+    <center>
+        <form ng-submit="addEmp(empInfo)" >
+            ID: <input type="text" ng-model="empInfo.id" /><br />
+            Name: <input type="text" ng-model="empInfo.name" /><br />
+            Job: <input type="text" ng-model="empInfo.job" /><br />
+            Salary: <input type="text" ng-model="empInfo.salary" /><br />
+
+            <input type="submit" value="Add" class="btn btn-primary" ng-if="empInfo.id.length>0" />
+           
+        </form>
+    </center>
+    <table border="1" class="table-striped table-hover">
+        <thead>
+            <tr>
+                <th>EmpId</th>
+                <th>
+                    EmpName
+                </th>
+                <th>Job</th>
+                <th>Salary</th>
+                <th>da</th>
+                <th>action</th>
+            </tr>
+        </thead>
+        <tbody ng-repeat="p in Employees">
+            <tr>
+                <td><span ng-bind="p.id"></span></td>
+                <td><span ng-bind="p.name"></span></td>
+                <td><span ng-bind="p.job"></span></td>
+                <td><span ng-bind="p.salary"></span></td>
+                <td><span ng-bind="p.da">{{p.da}}</span></td>
+                <td>
+                    <a href="#" ng-click="removeItem($index)">Remove</a>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="../scripts/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

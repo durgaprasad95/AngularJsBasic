@@ -1,0 +1,13 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="../styles/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-app="myApp" ng-filter="reverse">
+    <h1 class="bg-success">Reverse Filter</h1>
+    Name: <input type="text" ng-model="name" />{{name | reverse:6}}
+    <script src="../scripts/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

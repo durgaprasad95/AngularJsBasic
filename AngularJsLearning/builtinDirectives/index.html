@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="../styles/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-app="myApp" ng-cloak class="well"
+      ng-controller="DirectiveController" ng-init="name='Akarsh'">
+    <h2 ng-style="{color:myColor}" ng-bind="appTitle"></h2>
+
+    <ng-include src="'navmenu.html'"></ng-include>
+
+    Enter Name:<input type="text" ng-model="empName" 
+                      ng-required placeholder="Name"/>
+
+    <div ng-if="empName.length>0">
+        <span class="bg-success">Welcome {{empName}}</span>
+    </div>
+    <div style="background-color:yellow; font-size:20px">
+        Cart Items:{{products.length}}
+    </div>
+    <div ng-show="products.length>0">
+        <table border="1" class="table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Serial No</th>
+                    <th>
+                        Product Name
+                    </th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="p in products">
+                <tr>
+                    <td>{{$index+1}}</td>
+                    <td><span ng-bind="p.name"></span></td>
+                    <td><span ng-bind="p.price"></span></td>
+                    <td>
+                        <a href="#" ng-click="removeItem($index)">Remove</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br />
+    <input type="button" ng-click="discount()" value="Diwali Discount" />
+    <script src="../scripts/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
