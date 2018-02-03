@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body ng-app="myApp">
+    <center><h1 class="bg-primary">Compile Link Controller Demo</h1></center>
+    
+    <!--nested directives, Check console for output-->
+    <div test-directive text="{{i}}" ng-repeat="i in [1,2,3,4,5]">
+        {{i}}
+        <img ng-src="{{onOff}}" ng-click="chng()"/>
+    </div>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/app/app.js"></script>
+    <script src="scripts/app/appDirective.js"></script>
+</body>
+</html>

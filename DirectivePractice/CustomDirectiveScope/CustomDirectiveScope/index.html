@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    
+	
+    <link href="bootstrap.css" rel="stylesheet" />	
+    <meta charset="utf-8" />
+</head>
+<body ng-app="myApp" ng-controller="app">
+    <center><h1 class="bg-success">Isolated Scope Test</h1></center>
+    <center>
+        <h3 class="bg-light">Controller</h3>
+    </center>
+        <p>Test var1 name(Text-Bind):{{name}}</p>
+
+        <p>Test var 2 type(Two-Way Bind-reff):{{type}}</p>
+
+        One way Bind:<input type="button" class="btn-primary" ng-click="popTheName()" value="controller" />
+
+    <center>
+        <h3 class="bg-light">Directive</h3>
+    </center>
+            <div scope-test name="{{name}}" type="type" func="popTheName()"></div>
+
+
+</body>
+</html>

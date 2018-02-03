@@ -1,0 +1,128 @@
+[{
+    "functionName": "updateSortType",
+    "module": "detail-metric-summary",
+    "purpose": "Updates Graph based on sort type",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-metric-summary"]
+},
+{
+    "functionName": "onsliceChange",
+    "module": "detail-graph",
+    "purpose": "Updates Graph based on slice chabge",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-graph"]
+},{
+    "functionName": "handleMouseActions",
+    "module": "detail-graph",
+    "purpose": "Updates Graph based on slice chabge",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-selected-filters-summary", "detail-header","detail-filter-threshold","detail-metric-summary"]
+},{
+    "functionName": "hideShowInfo",
+    "module": "detail-recommended-metrics",
+    "purpose": "Shows/Hides info",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-recommended-metrics"]
+},{
+    "functionName": "addRowsToFilter",
+    "module": "detail-filter-slider",
+    "purpose": "Shows/Hides info",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-exclusion-filter-tab", "detail-filter-slider"]
+},{
+    "functionName": "hideExlusionError",
+    "module": "detail-controller",
+    "purpose": "Shows/Hides info",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-exclusion-filter-tab", "detail-filter-slider", "switchTab"]
+},{
+    "functionName": "navBenchmarkFilter",
+    "module": "detail-recommended-metrics",
+    "purpose": "Shows/Hides info",
+    "isUsedInUI": "no",
+    "getsCalledIn": ["updateBenchmarkData", "detail-selected-filters-summary", "displaySimilarTitles", "clearSearch"]
+},{
+    "functionName": "toggleNavOverlays",
+    "module": "detail-filter-overlay",
+    "purpose": "Shows/Hides info",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-filter-overlay"]
+},{
+    "functionName": "toggleNavFilters",
+    "module": "detail-filter-slider",
+    "purpose": "Shows/Hides info",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-filter-slider", "detail-exclusion-filter-tab"]
+},{
+    "functionName": "closeNavFilter",
+    "module": "detail-filter-slider",
+    "purpose": "Shows/Hides info",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["closeSliderWindow", "detail-exclusion-filter-tab", "detail-filter-slider", "CloseBenchmark", "LoadDetailGraph"]
+},{
+    "functionName": "closeThresholdFilter",
+    "module": "detaiil-threshold",
+    "purpose": "Shows/Hides info",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detaiil-threshold"]
+},{
+    "functionName": "filterPaginateSearch",
+    "module": "detail-filter-slider",
+    "purpose": "Shows/Hides info",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-exclusion", "detail-filter-slider"]
+},{
+    "functionName": "getSearchIndustries",
+    "module": "detail-filter-benchmarks",
+    "purpose": "Shows/Hides info",
+    "isUsedInUI": "no",
+    "getsCalledIn": ["detail-filter-benchmarks"]
+},{
+    "functionName": "loadIndustryTitles",
+    "module": "detail-filter-benchmarks",
+    "purpose": "Gets All Industry Titles",
+    "isUsedInUI": "no",
+    "getsCalledIn": ["detail-filter-benchmarks"]
+},{
+    "functionName": "updateDisplayTitles",
+    "module": "detail-filter-benchmarks",
+    "purpose": "Gets All Industry Titles",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-filter-benchmarks"]
+},{
+    "functionName": "updateSelectedIndustry",
+    "module": "detail-filter-benchmarks",
+    "purpose": "Gets All Industry Titles",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-filter-benchmarks","detail-selected-filter-summary"]
+},{
+    "functionName": "displaySimilarTitles",
+    "module": "detail-filter-benchmarks",
+    "purpose": "Gets All Industry Titles",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-filter-benchmarks"]
+},{
+    "functionName": "toggleSubFilter",
+    "module": "detail-filter-slider",
+    "purpose": "Gets All Industry Titles",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-filter-slider", "detail-exclusion-filter-tab"]
+},{
+    "functionName": "removeAllThresholds",
+    "module": "detail-controller",
+    "purpose": "Gets All Industry Titles",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-selected-filter-summary","detail-filter-threshold"]
+},{
+    "functionName": "showDetailInfo",
+    "module": "detail-header",
+    "purpose": "Gets All Industry Titles",
+    "isUsedInUI": "yes",
+    "getsCalledIn": ["detail-header"]
+}
+
+
+
+
+
+]

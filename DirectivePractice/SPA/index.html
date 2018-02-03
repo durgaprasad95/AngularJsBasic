@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>SPA TEST</title>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-app="spa">
+
+    <header>
+        <h1 class="intro" align="center">
+            <mark style="text-shadow:2px 2px 2px #808080">SPA Test</mark>
+        </h1>
+    </header>
+    <br />
+    <br />
+    <nav>
+        <a href="#!/color" style="margin:10px">Color</a>
+        <a href="#!/DirectiveLink" style="margin:10px">Directive Link</a>
+    </nav>
+    <br />
+    <section style="background-color:lightgreen">
+        <!-- all the templates are replaced here when clicked on the link -->
+        <div ng-view></div>
+    </section>
+
+    <footer>
+        <h5 align="center">CopyRights reserved</h5>
+    </footer>
+    <br />
+    <aside>
+        <h3>
+            <marquee>Website under Development</marquee>
+        </h3>
+    </aside>
+
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    
+    <script src="app/app.js"></script>
+    <script src="app/app/chngColorController.js"></script>
+    <script src="app/app/colourChangeDIrective.js"></script>
+
+    <script src="app/appLink/appDirective.js"></script>
+</body>
+</html>

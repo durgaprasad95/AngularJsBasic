@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="myController">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+	<link href="css/bootstrap.css" rel="stylesheet" />	
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/app/appD.js"></script>
+	<script src="scripts/app/colourChangeDirective.js"></script>
+	<script src="scripts/app/chngColorController.js"></script>
+</head>
+<body ng-style="myColor">
+	<center><h1 style="background-color:#E91E63;color:white">Color Change Using Isolated Scope</h1></center>
+   <!-- <button ng-click="myColor={background:colour}">SetColor</button>-->
+    <div change-color func="chngColor(colour)" colour="colour" >
+	</div>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body ng-app="myApp">
+    <!--nested directives, Check console for output-->
+    <div test-directive text="First">
+        <div test-directive text="--Second">
+            <div test-directive text="---Third">
+                {{controllerVar}}
+            </div>
+        </div>
+    </div>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/app/app.js"></script>
+    <script src="scripts/app/appDirective.js"></script>
+</body>
+</html>
