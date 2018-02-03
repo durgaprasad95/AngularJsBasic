@@ -1,0 +1,11 @@
+https://github.com/d3/d3/wiki/Gallery
+
+
+http://plnkr.co/edit/NRAu0k?p=preview 
+http://krispo.github.io/angular-nvd3/#/quickstart 
+http://krispo.github.io/angular-nvd3/#/ 
+
+
+
+final link
+http://plnkr.co/edit/1ggGsQ8FjApvNcdpzTOs?p=preview

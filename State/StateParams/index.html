@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="styles/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-app="myApp"> 
+    <div class="row">
+        <div class="col-sm-12" style="border:2px solid black" >
+            State Param Demo | <a ui-sref="root">Home</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"style="height:auto;border:2px solid black">
+            <ul>
+                <h4>Using href</h4>
+                <li><a href="#!/first-msg/10/120">Msg1</a></li>
+                <li><a href="#!/second-msg/100/12">Msg2 with regexp</a></li>
+                <li><a href="#!/third-msg/">Msg3 Opt params</a></li>
+                <!--<li><a href="#!/fourth-msg/80/100">Msg4 default params</a></li>-->
+            </ul>
+
+            <hr />
+            <ul>
+                <h4>Using ui-sref</h4>
+                <li><a ui-sref='firstMessage({a:10,b:20})'>Msg1</a></li>
+                <li><a ui-sref='secondMessage({a:100,b:200})'>Msg2 with regexp</a></li>
+                <li><a ui-sref='thirdMessage(null)'>Msg3 Otp param</a></li>
+                <!--<li><a ui-sref='fourthMessage({a:80,b:10})'>Msg4 default params</a></li>-->
+            </ul>
+        </div>
+        <div class="col-sm-9" style="border:2px solid black">
+            <div ui-view></div>
+        </div>
+    </div>
+</body>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/angular-ui-router.min.js"></script>
+<script src="scripts/angular-route.js"></script>
+<script src="app/app.js"></script>
+
+</html>

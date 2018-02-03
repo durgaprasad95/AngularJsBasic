@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="styles/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myController">
+        <h1>HTTP POST DEMO</h1><br />
+        <input type="text" ng-model="inputParam" class="bg-light" />
+        <input type="button" ng-click="postData(inputParam)" value="postData" class="btn-dark" />
+        <ul>
+            
+            <li>Status Code:{{status}}</li>
+            <li>Entry Count:{{entryCount}}</li>
+        </ul>
+
+    </div>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="app/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+[
+  
+  {
+    "variableName": "isRetentionRateToggle1",
+    "module": "detail-graph",
+    "purpose": "Show/Hides renetntion toggle ",
+    "isUsedInUI": "yes",
+    "valueChangeIn": [ "resetValues", "drillUp", "onViewByChange", "onTimePeriodChange", "loadDetailReport", "navApplyFilter", "loadDetailGraph" ]
+  },
+  {
+    "variableName": "isRetentionRateToggle2",
+    "module": "detail-graph",
+    "purpose": "Show/Hides renetntion toggle ",
+    "isUsedInUI": "yes",
+    "valueChangeIn": [ "resetValues", "drillUp", "onViewByChange", "onTimePeriodChange", "loadDetailReport", "navApplyFilter", "loadDetailGraph" ]
+  },
+  {
+    "variableName": "isRetentionRateToggle3",
+    "module": "detail-graph",
+    "purpose": "Show/Hides renetntion toggle ",
+    "isUsedInUI": "yes",
+    "valueChangeIn": [ "resetValues", "drillUp", "onViewByChange", "onTimePeriodChange", "loadDetailReport", "navApplyFilter", "loadDetailGraph" ]
+  }
+]

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="styles/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-app="myApp"> 
+    <div class="row">
+        <div class="col-sm-12" style="border:2px solid black" >
+            Multiple Views Demo | <a ui-sref="root">Home</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"style="height:auto;border:2px solid black">
+            <ul>
+              <li><a href="#!/sample1/10/20">Sample1</a></li>
+                <li><a href="#!/sample2/10/20">Sample2</a></li>
+                <li><a href="#!/sample3/">Sample3</a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-9" style="border:2px solid black">
+            <div ui-view></div>
+            <div ui-view="namedView"></div>
+            <div ui-view="headView"></div>
+            <div ui-view="bodyView"></div>
+        </div>
+    </div>
+</body>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/angular-ui-router.min.js"></script>
+<script src="scripts/angular-route.js"></script>
+<script src="app/app.js"></script>
+
+</html>
